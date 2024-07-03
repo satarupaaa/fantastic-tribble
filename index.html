@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background">
+    <div>
         <header>
+            
             <img src="logo.png" alt="Site Logo" class="logo">
             <h1 class="sitename">Movies & Chill </h1>
-            <a href="contact.html" class="contact">Contact</a>
+            <a href="index2.html" class="contact">Contact</a>
         </header>
+        </div>
+        <div class="background">
         <main>
             <section class="welcome-section">
                 <h2>Welcome to the Site</h2>
-                <p> Need some help deciding what to watch before all your popcorn runs out? We’ve got you covered! With this guide you can find the best movies to watch online across all languages, eras, and genres all under one roof. From seeing where to watch movies for free to keeping track of all the new movie releases, our easy-to-use guide is your go-to hub for all things movies.
-                    </p>
+                <!-- <p> Need some help deciding what to watch before all your popcorn runs out? We’ve got you covered! With this guide you can find the best movies to watch online across all languages, eras, and genres all under one roof. From seeing where to watch movies for free to keeping track of all the new movie releases, our easy-to-use guide is your go-to hub for all things movies.
+                    </p> -->
             </section>
             <section class="content-section">
                 <div class="content left">
@@ -41,8 +44,7 @@
             </section>
             <section>
                 <div class="video-section">
-                 <iframe width="853" height="480" src="https://www.youtube.com/embed/C1-xagJ3WjA" title="Sath Kangan Leke Aana | Arijit Singh | Slowed and Reverb | Use Earphone 🎧 #song #arjitsingh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/elY14dZvoqY" title="Kalki 2898 AD Movie REVIEW | Deeksha Sharma" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </iframe>
                   </div>
                  
                 
@@ -71,13 +73,16 @@ body, html {
     height: 300vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    background-image: url('background1.jpg');
+    background-size: cover;
+    width: 100%;
     background-color: rgba(172, 123, 123, 0.5);
 }
 
@@ -99,9 +104,12 @@ header {
 }
 
 .welcome-section {
+    display: flex;
     text-align: center;
-    color: #191818;
-    margin: 40px 0;
+    color: #060606;
+    /* margin: 10px 0; */
+    flex-direction: column;
+    justify-content: center;
 }
 
 .content-section {
@@ -112,11 +120,12 @@ header {
 
 .content {
     width: 45%;
-    color: #7da18b;
+    color:#ffe396;
 }
 
 .content img {
     width: 100%;
+    height: auto;
 }
 
 .video-section {
